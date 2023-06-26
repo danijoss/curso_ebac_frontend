@@ -52,3 +52,24 @@ $(document).ready(function(){
         
 })
 
+//valida nome e endereço completo:
+
+$("#btn").click(function(e) {
+    if (/\w+\s+\w+/.test($("#nome").val())) {
+        
+    } else {
+        alert("O nome deve ser completo");
+    }
+
+    e.preventDefault();
+});
+
+$("#btn").click(function(e) {
+    if (/\w+\s+\w+/.test($("#endereco").val())) {
+        
+    } else {
+        alert("O endereço deve ser completo");
+    }
+
+    e.preventDefault();
+});
